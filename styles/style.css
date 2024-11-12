@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(2, 12, 20);
+  color: rgb(247, 248, 249);
+}
+/* header*/
+header {
+  margin-top: 10px;
+  position: relative;
+  padding: 0.2rem 2rem;
+  background-color: transparent;
+}
+
+.logo {
+  font-size: 3rem;
+  color: orange;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.5s ease;
+  text-decoration: none;
+}
+/* main section */
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 2rem;
+  gap: 4rem;
+}
+
+.home-img {
+  border-radius: 50%;
+  box-shadow: 10px 10px 10px 10px #ff8b0765;
+}
+
+.home-img img {
+  position: relative;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: 0.2s linear;
+  width: 70vw;
+  margin-top: 4rem;
+}
+
+/* home text */
+.home-content h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.home-content h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.typing-text span {
+  position: relative;
+  font-size: 1.7rem;
+  font-weight: 300;
+}
+
+span {
+  color: orange;
+}
+
+.typing-text span::before {
+  content: "software Developer";
+  color: orange;
+  animation: words 20s infinite;
+}
+
+.typing-text span::after {
+  content: "";
+  background-color: black;
+  position: absolute;
+  border-left: 3px solid black;
+  animation: cursor 0.6s infinite;
+}
+
+.home-content p {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+}
+
+/* Socio Icns */
+.social-icons a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  background-color: transparent;
+  border: 0.2rem solid orange;
+  font-size: 2rem;
+  border-radius: 50%;
+  margin: 3rem 1.5rem 3rem 0;
+  transition: 0.3s ease;
+  color: orange;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2.8rem;
+  background-color: black;
+  border-radius: 4rem;
+  font-size: 1.6rem;
+  color: orange;
+  letter-spacing: 0.3rem;
+  font-weight: 600;
+  border: 2px solid orange;
+  transition: 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: orange;
+  color: black;
+  box-shadow: 0 0 25px #f89217;
+}
+
+/* flip card */
+.abt{
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 2rem;
+}
+
+.flip-card {
+  background-color: transparent;
+  height: 200px;
+  border: 1px solid #ffa500;
+  border-radius: 1rem;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  box-shadow: 0 8px 14px 0 rgba(255, 139, 7, 0.427);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; 
+  backface-visibility: hidden;
+}
+
+  /* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: transparent;
+  border-radius: 1rem;
+  color: rgb(235, 233, 233);
+  margin: auto;
+  text-align: center;
+  padding: 3rem;
+}
+  
+/* Style the back side */
+.flip-card-back {
+  background-color: rgb(255, 255, 255);
+  border-radius: 1rem;
+  color: rgb(31, 31, 30);
+  transform: rotateY(180deg);
+  line-height: 1.5rem;
+  text-indent: 1rem;
+  padding: 1.9rem;
+  h1{
+    color: orange;
+  }
+  h4{
+    font-family: bold;
+  }
+}
+
+.icons {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  background-color: aliceblue;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.icns {
+  margin: 1.5rem;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+}
+
+h2 {
+  color: orange;
+}
+
+@media (min-width: 768px) {
+/* desktop */
+  .home{
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .abt{
+    flex-direction: row;
+  }
+}
