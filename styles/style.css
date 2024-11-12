@@ -9,9 +9,9 @@ body {
   width: 100%;
   height: 100vh;
   background-color: #020a19;
-  color: rgb(247, 248, 249);
+  color: #f7f8f9;
 }
-/* header*/
+/* heade */
 header {
   margin-top: 10px;
   position: relative;
@@ -33,7 +33,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 2rem 2rem;
+  margin: 2rem;
   gap: 4rem;
 }
 
@@ -64,14 +64,14 @@ header {
   margin-bottom: 1rem;
 }
 
+span {
+  color: #ffa500;
+}
+
 .typing-text span {
   position: relative;
   font-size: 1.7rem;
   font-weight: 300;
-}
-
-span {
-  color: #ffa500;
 }
 
 .typing-text span::before {
@@ -94,9 +94,10 @@ span {
 }
 
 /* Socio Icns */
-.social-icons{
+.social-icons {
   margin-bottom: 1.3rem;
 }
+
 .social-icons a {
   display: inline-flex;
   justify-content: center;
@@ -135,7 +136,7 @@ span {
 }
 
 /* flip card */
-.abt{
+.abt {
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -172,7 +173,7 @@ span {
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden; 
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
@@ -187,12 +188,12 @@ h2 {
   color: #ebe9e9;
   margin: auto;
   padding: 3rem;
-  
+
   h2 {
     margin-top: 1rem;
   }
 }
-  
+
 /* Style the back side */
 .flip-card-back {
   background-color: #f0f8ff;
@@ -262,12 +263,12 @@ footer .copy-right-sec {
     height: 650px;
     margin-right: 1rem;
     margin-bottom: 3rem;
-    background-image: url(../image/538a621c-4095-44f6-a0b8-01d65ab02a38.jpeg);
+    background-image: url("../image/538a621c-4095-44f6-a0b8-01d65ab02a38.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
   }
 
-   /* flip card */
+  /* flip card */
   .abt {
     padding: 1rem;
     display: grid;
