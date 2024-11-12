@@ -1,0 +1,297 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #020a19;
+  color: #f7f8f9;
+}
+
+/* heade */
+header {
+  margin-top: 10px;
+  position: relative;
+  padding: 0.2rem 2rem;
+  background-color: transparent;
+}
+
+.logo {
+  font-size: 3rem;
+  color: #ffa500;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.5s ease;
+  text-decoration: none;
+}
+
+/* main section */
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  gap: 4rem;
+}
+
+.home-img {
+  border-radius: 50%;
+  box-shadow: 10px 10px 10px 10px #ff8b0765;
+}
+
+.home-img img {
+  position: relative;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: 0.2s linear;
+  width: 70vw;
+  margin-top: 4rem;
+}
+
+/* home text */
+.home-content h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.home-content h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+span {
+  color: #ffa500;
+}
+
+.typing-text span {
+  position: relative;
+  font-size: 1.7rem;
+  font-weight: 300;
+}
+
+.typing-text span::before {
+  content: "software Developer";
+  color: #ffa500;
+  animation: words 20s infinite;
+}
+
+.typing-text span::after {
+  content: "";
+  background-color: black;
+  position: absolute;
+  border-left: 3px solid black;
+  animation: cursor 0.6s infinite;
+}
+
+.home-content p {
+  font-size: 0.9rem;
+  line-height: 1.8rem;
+}
+
+/* Socio Icns */
+.social-icons {
+  margin-bottom: 1.3rem;
+}
+
+.social-icons a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.6rem;
+  height: 2.6rem;
+  text-decoration: none;
+  background-color: transparent;
+  border: 0.2rem solid #ffa500;
+  font-size: 2rem;
+  border-radius: 50%;
+  margin: 1rem 1rem 1rem 0;
+  transition: 0.3s ease;
+  color: #ffa500;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2.8rem;
+  background-color: transparent;
+  border-radius: 4rem;
+  font-size: 1.6rem;
+  color: #ffa500;
+  letter-spacing: 0.3rem;
+  font-weight: 600;
+  border: 2px solid #ffa500;
+  transition: 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #ffa500;
+  color: black;
+  box-shadow: 0 0 25px #f89217;
+}
+
+/* flip card */
+.abt {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 2rem;
+  font-size: 2rem;
+}
+
+.flip-card {
+  background-color: transparent;
+  height: 200px;
+  border: 1px solid #ffa500;
+  border-radius: 1rem;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  box-shadow: 0 8px 14px 0 #ff8b076d;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+h2 {
+  color: #ffa500;
+}
+
+.flip-card-front {
+  background-color: transparent;
+  border-radius: 1rem;
+  color: #ebe9e9;
+  margin: auto;
+  padding: 3rem;
+
+  h2 {
+    margin-top: 1rem;
+  }
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: #f0f8ff;
+  border-radius: 1rem;
+  color: #1f1f1e;
+  transform: rotateY(180deg);
+  line-height: 1.5rem;
+  text-indent: 1rem;
+  padding: 1.9rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1rem;
+
+  h1 {
+    color: orange;
+  }
+
+  h4 {
+    font-family: bold;
+  }
+}
+
+.icons {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  background-color: #f0f8ff;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.icns {
+  margin-top: 1rem;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+}
+
+.icons .js {
+  display: none;
+}
+
+/* footer */
+footer {
+  margin-top: 1.7rem;
+}
+
+footer .copy-right-sec {
+  font-size: 0.8rem;
+  padding: 2rem;
+  border-top: 1px solid #ffa500;
+}
+
+@media (min-width: 768px) {
+  /* desktop */
+  .home {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .hmima {
+    display: none;
+  }
+
+  .home-img {
+    width: 100rem;
+    height: 650px;
+    margin-right: 1rem;
+    margin-bottom: 3rem;
+    background-image: url("../image/538a621c-4095-44f6-a0b8-01d65ab02a38.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* flip card */
+  .abt {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    font-size: 2rem;
+  }
+
+  .flip-card {
+    height: 16rem;
+  }
+
+  .icons .js {
+    display: block;
+  }
+
+  footer {
+    height: 0.8rem;
+  }
+
+  footer .copy-right-sec {
+    font-size: 14px;
+    padding: 2rem;
+  }
+}
