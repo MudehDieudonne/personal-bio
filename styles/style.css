@@ -185,7 +185,7 @@ span {
   
 /* Style the back side */
 .flip-card-back {
-  background-color: rgb(255, 255, 255);
+  background-color: #f0f8ff;
   border-radius: 1rem;
   color: rgb(31, 31, 30);
   transform: rotateY(180deg);
@@ -206,7 +206,7 @@ span {
   object-fit: cover;
   width: 100%;
   height: 100%;
-  background-color: aliceblue;
+  background-color: #f0f8ff;
   border-radius: 1rem;
   display: flex;
   justify-content: space-evenly;
@@ -217,6 +217,10 @@ span {
   width: 5rem;
   height: 5rem;
   border-radius: 50%;
+}
+
+.icons .js {
+  display: none;
 }
 
 h2 {
@@ -231,13 +235,52 @@ footer {
 footer .copy-right-sec {
   font-size: 0.8rem;
   padding: 2rem;
-  border-top: 1px solid orange;  
+  border-top: 1px solid orange;
 }
 
 @media (min-width: 768px) {
-/* desktop */
-  .home{
+  /* desktop */
+  .home {
     display: flex;
     flex-direction: row-reverse;
+  }
+
+  .hmima {
+    display: none;
+  }
+
+  .home-img {
+    width: 100rem;
+    height: 650px;
+    margin-right: 1rem;
+    margin-bottom: 3rem;
+    background-image: url(../image/538a621c-4095-44f6-a0b8-01d65ab02a38.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* flip card */
+.abt{
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  font-size: 2rem;
+}
+
+.flip-card {
+  height: 16rem;
+}
+
+.icons .js {
+  display: block;
+}
+
+  footer {
+    height: 0.8rem;
+  }
+  footer .copy-right-sec {
+    font-size: 14px;
+    padding: 2rem;
   }
 }
