@@ -137,6 +137,7 @@ span {
   flex-direction: column;
   justify-content: space-evenly;
   gap: 2rem;
+  font-size: 2rem;
 }
 
 .flip-card {
@@ -176,8 +177,10 @@ span {
   border-radius: 1rem;
   color: rgb(235, 233, 233);
   margin: auto;
-  text-align: center;
   padding: 3rem;
+  h2{
+    margin-top: 1rem;
+  }
 }
   
 /* Style the back side */
@@ -189,6 +192,8 @@ span {
   line-height: 1.5rem;
   text-indent: 1rem;
   padding: 1.9rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1rem;
   h1{
     color: orange;
   }
@@ -208,7 +213,7 @@ span {
 }
 
 .icns {
-  margin: 1.5rem;
+  margin-top: 1rem;
   width: 5rem;
   height: 5rem;
   border-radius: 50%;
@@ -218,13 +223,21 @@ h2 {
   color: orange;
 }
 
+/* footer */
+footer {
+  margin-top: 1.7rem;
+}
+
+footer .copy-right-sec {
+  font-size: 0.8rem;
+  padding: 2rem;
+  border-top: 1px solid orange;  
+}
+
 @media (min-width: 768px) {
 /* desktop */
   .home{
     display: flex;
     flex-direction: row-reverse;
-  }
-  .abt{
-    flex-direction: row;
   }
 }
